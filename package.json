@@ -3,6 +3,7 @@
   "version": "0.2.12",
   "license": "MIT",
   "scripts": {
+    "build-ngc": "ngc -p lib/tsconfig.json",
     "build-lib": "ng-packagr -p lib",
     "build-setup": "npm run build-lib && npm install dist/ngrx-data --no-save --no-package-lock"
   },

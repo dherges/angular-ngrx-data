@@ -9,7 +9,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noImplicitAny": true,
-    "target": "es5",
+    "target": "es2015",
+    "module": "es2015",
     "typeRoots": [
       "../node_modules/@types"
     ],
@@ -18,8 +19,11 @@
       "dom"
     ]
   },
+  "files": ["src/public_api.ts"],
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true, // false doesn't work either
+    "fullTemplateTypeCheck": false, // false doesn't work either
     "preserveWhitespaces": false,
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": true
   }
 }
